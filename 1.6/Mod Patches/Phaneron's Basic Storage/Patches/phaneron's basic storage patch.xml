@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageStonePot"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_NeolithicStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageLargeCrate"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageCask"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageFoodCupboard"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMealStorage"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMeatHook"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageWeaponRack"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageSack"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_MedievalStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_IndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_IndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_IndustrialStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_IndustrialStorage</li>
+				<li>BiofuelRefining</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="BasicStorage"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="BasicStorageNeolithicStorage"]</xpath>
+	</Operation>
+</Patch>

@@ -1,14 +1,17 @@
 <loadFolders>
-    <v1.6>
-        <li>/</li>
-        <li>1.6</li>
-        <li>1.6/Mod Patches/Adaptive Storage Neolithic</li>
-        <li IfModActive="phaneron.basic.storage">1.6/Mod Patches/Phaneron's Basic Storage</li>
-        <li IfModActive="sbz.NeatStorage">1.6/Mod Patches/Neat Storage</li>
-        <li IfModActive="sbz.NeatStorageFridge">1.6/Mod Patches/Fridge</li>
-        <li IfModActive="sbz.GravshipStorage">1.6/Mod Patches/Gravship Storage</li>
-        <li IfModActive="sbz.CryogenicTank">1.6/Mod Patches/Cryogenic Tank</li>
-        <li IfModActive="Adamas.VendingMachines">1.6/Mod Patches/Vending Machines</li>
-        <li IfModActive="OskarPotocki.Vfe.Medieval2">1.6/Mod Patches/VFE Medieval 2</li>
-    </v1.6>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li>1.6/Mod Patches/Adaptive Storage Neolithic</li>
+		<li IfModActive="phaneron.basic.storage">1.6/Mod Patches/Phaneron's Basic Storage</li>
+		<li IfModActive="sbz.neatstorage">1.6/Mod Patches/Neat Storage</li>
+		<li IfModActive="sbz.NeatStorageFridge">1.6/Mod Patches/SBZ Fridge</li>
+		<li IfModActive="sbz.gravshipstorage">1.6/Mod Patches/Gravship Storage</li>
+		<li IfModActive="sbz.CryogenicTank">1.6/Mod Patches/Cryogenic Tank</li>
+		<li IfModActive="Adamas.VendingMachines">1.6/Mod Patches/Vending Machines</li>
+		<li IfModActive="oskarpotocki.vfe.medieval2">1.6/Mod Patches/VFE Medieval 2</li>
+		<li IfModActive="VanillaExpanded.VFECore">1.6/Mod Patches/VE Furniture</li>
+		<li IfModActive="vanillaexpanded.recycling">1.6/Mod Patches/VE Recycling</li>
+		<li IfModActive="VanillaExpanded.VFESpacer">1.6/Mod Patches/VFE Spacer</li>
+	</v1.6>
 </loadFolders>
