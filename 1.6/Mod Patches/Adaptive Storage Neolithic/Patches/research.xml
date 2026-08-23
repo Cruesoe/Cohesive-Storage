@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="ASNeolithicStorageBase"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_NeolithicStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="ASNeolithicItemDisplayBase"]/researchPrerequisites</xpath>
+		<value>
+			<researchPrerequisites>
+				<li>Cohesive_NeolithicStorage</li>
+			</researchPrerequisites>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[@Name="ASNeolithicResearchBase"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ResearchTabDef[defName="ASFAdaptiveStorage"]</xpath>
+	</Operation>
+</Patch>

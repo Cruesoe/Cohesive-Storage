@@ -1,31 +1,16 @@
 <loadFolders>
-    <v1.5>
-        <li>/</li>
-        <li>1.5</li>
-        <li IfModActive="Adaptive.PrimitiveStorage">1.5/Mod Patches/Adaptive Primitive Storage</li>
-        <li IfModActive="Sarg.AlphaBooks">1.5/Mod Patches/Alpha Books</li>
-        <li IfModActive="DankPyon.Medieval.Overhaul">1.5/Mod Patches/Medieval Overhaul</li>
-        <li IfModActive="sbz.NeatStorage">1.5/Mod Patches/Neat Storage</li>
-        <li IfModActive="SilkCircuit.PassItThroughTheWindow">1.5/Mod Patches/Pass It Through</li>
-        <li IfModActive="VanillaExpanded.VfeCore">1.5/Mod Patches/VE Furniture</li>
-        <li IfModActive="VanillaExpanded.Recycling">1.5/Mod Patches/VE Recycling</li>
-        <li IfModActive="Adamas.VendingMachines">1.5/Mod Patches/Vending Machines</li>
-        <li IfModActive="OskarPotocki.Vfe.Mechanoid">1.5/Mod Patches/VFE Mechanoids</li>
-        <li IfModActive="OskarPotocki.Vfe.Medieval2">1.5/Mod Patches/VFE Medieval 2</li>
-        <li IfModActive="VanillaExpanded.VfeSpacer">1.5/Mod Patches/VFE Spacer</li>
-    </v1.5>
     <v1.6>
         <li>/</li>
         <li>1.6</li>
-        <li IfModActive="Adaptive.PrimitiveStorage">1.6/Mod Patches/Adaptive Primitive Storage</li>
-        <li IfModActive="Sarg.AlphaBooks">1.6/Mod Patches/Alpha Books</li>
-        <li IfModActive="DankPyon.Medieval.Overhaul">1.6/Mod Patches/Medieval Overhaul</li>
+        <li IfModActive="adaptive.storage.neolithic">1.6/Mod Patches/Adaptive Storage Neolithic</li>
+        <li IfModActive="phaneron.basic.storage">1.6/Mod Patches/Phaneron's Basic Storage</li>
         <li IfModActive="sbz.NeatStorage">1.6/Mod Patches/Neat Storage</li>
-        <li IfModActive="SilkCircuit.PassItThroughTheWindow">1.6/Mod Patches/Pass It Through</li>
+        <li IfModActive="sbz.NeatStorageFridge">1.6/Mod Patches/Fridge</li>
+        <li IfModActive="sbz.GravshipStorage">1.6/Mod Patches/Gravship Storage</li>
+        <li IfModActive="sbz.CryogenicTank">1.6/Mod Patches/Cryogenic Tank</li>
         <li IfModActive="VanillaExpanded.VfeCore">1.6/Mod Patches/VE Furniture</li>
         <li IfModActive="VanillaExpanded.Recycling">1.6/Mod Patches/VE Recycling</li>
         <li IfModActive="Adamas.VendingMachines">1.6/Mod Patches/Vending Machines</li>
-        <li IfModActive="OskarPotocki.Vfe.Mechanoid">1.6/Mod Patches/VFE Mechanoids</li>
         <li IfModActive="OskarPotocki.Vfe.Medieval2">1.6/Mod Patches/VFE Medieval 2</li>
         <li IfModActive="VanillaExpanded.VfeSpacer">1.6/Mod Patches/VFE Spacer</li>
     </v1.6>
