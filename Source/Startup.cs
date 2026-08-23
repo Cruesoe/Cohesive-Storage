@@ -3,10 +3,9 @@ using Verse;
 
 namespace CohesiveStorage;
 
-[StaticConstructorOnStartup]
-public static class Startup
+public class CohesiveStorageMod : Mod
 {
-	static Startup()
+	public CohesiveStorageMod(ModContentPack content) : base(content)
 	{
 		new Harmony("koberiddle.cohesivestorage").PatchAll();
 	}

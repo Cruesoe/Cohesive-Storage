@@ -13,5 +13,6 @@
 		<li IfModActive="VanillaExpanded.VFECore">1.6/Mod Patches/VE Furniture</li>
 		<li IfModActive="vanillaexpanded.recycling">1.6/Mod Patches/VE Recycling</li>
 		<li IfModActive="VanillaExpanded.VFESpacer">1.6/Mod Patches/VFE Spacer</li>
+		<li>1.6/Mod Patches/Overlap</li>
 	</v1.6>
 </loadFolders>

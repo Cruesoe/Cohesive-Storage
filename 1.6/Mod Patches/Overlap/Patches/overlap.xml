@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Runs last (see LoadFolders). Era patches assign research first; this pass
+	     then strips architect + research so the building is gone from both menus. -->
+
+	<!-- Adaptive large pot vs Phaneron pot, including generated chunk pots. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Phaneron's Basic Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@Name="ASNeolithicLargePotThingBase"]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicLargePot')]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicLargePot')]/researchPrerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicLargePot')]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Adaptive plinths vs Neat displays, including generated chunk plinths. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sbz] Neat Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[@Name="ASNeolithicPlinthBase"]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicPlinth')]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicPlinth')]/researchPrerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[starts-with(defName,'ASNeolithicPlinth')]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Phaneron: large crate and large bundle vs pallets. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Phaneron's Basic Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="BasicStorageLargeCrate" or defName="BasicStorageLargeBundle"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="BasicStorageLargeCrate" or defName="BasicStorageLargeBundle"]/researchPrerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="BasicStorageLargeCrate" or defName="BasicStorageLargeBundle"]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Neat: tall crate, corpse spot, extra display skins. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>[sbz] Neat Storage</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="sbz_CorpseSpot" or defName="sbz_TallCrate" or defName="sbz_OpenShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf" or defName="sbz_DisplayCabinet" or defName="sbz_NarrowDisplayCabinet" or defName="sbz_RoundPedestal"]/designationCategory</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="sbz_CorpseSpot" or defName="sbz_TallCrate" or defName="sbz_OpenShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf" or defName="sbz_DisplayCabinet" or defName="sbz_NarrowDisplayCabinet" or defName="sbz_RoundPedestal"]/researchPrerequisites</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<success>Always</success>
+					<xpath>Defs/ThingDef[defName="sbz_CorpseSpot" or defName="sbz_TallCrate" or defName="sbz_OpenShelf" or defName="sbz_TallDisplayShelf" or defName="sbz_NarrowTallDisplayShelf" or defName="sbz_DisplayCabinet" or defName="sbz_NarrowDisplayCabinet" or defName="sbz_RoundPedestal"]</xpath>
+					<value>
+						<designationCategory Inherit="false" />
+						<researchPrerequisites Inherit="false" />
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+	<!-- Phaneron + Neat: keep Phaneron crates, pallets, and weapon rack; keep Neat meat hook. -->
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Phaneron's Basic Storage</li>
+		</mods>
+		<match Class="PatchOperationFindMod">
+			<mods>
+				<li>[sbz] Neat Storage</li>
+			</mods>
+			<match Class="PatchOperationSequence">
+				<operations>
+					<li Class="PatchOperationRemove">
+						<success>Always</success>
+						<xpath>Defs/ThingDef[defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or defName="sbz_HalfPallet" or defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack" or defName="BasicStorageMeatHook"]/designationCategory</xpath>
+					</li>
+					<li Class="PatchOperationRemove">
+						<success>Always</success>
+						<xpath>Defs/ThingDef[defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or defName="sbz_HalfPallet" or defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack" or defName="BasicStorageMeatHook"]/researchPrerequisites</xpath>
+					</li>
+					<li Class="PatchOperationAdd">
+						<success>Always</success>
+						<xpath>Defs/ThingDef[defName="sbz_SmallCrate" or defName="sbz_Pallet" or defName="sbz_MiniPallet" or defName="sbz_HalfPallet" or defName="sbz_WeaponRack" or defName="sbz_HorizontalWeaponRack" or defName="sbz_VerticalWeaponRack" or defName="BasicStorageMeatHook"]</xpath>
+						<value>
+							<designationCategory Inherit="false" />
+							<researchPrerequisites Inherit="false" />
+						</value>
+					</li>
+				</operations>
+			</match>
+		</match>
+	</Operation>
+</Patch>
