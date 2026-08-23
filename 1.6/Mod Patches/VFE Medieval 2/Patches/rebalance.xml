@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>6</maxItemsInCell>
+		</value>
+	</Operation>
+</Patch>

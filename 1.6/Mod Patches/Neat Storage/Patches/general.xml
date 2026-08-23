@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_Crate"]/label</xpath>
+		<value>
+			<label>large container</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_MidCrate"]/label</xpath>
+		<value>
+			<label>medium container</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="sbz_SmallCrate"]/label</xpath>
+		<value>
+			<label>small container</label>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]/label</xpath>
+			<value>
+				<label>small weapon rack</label>
+			</value>
+		</match>
+	</Operation>
+</Patch>

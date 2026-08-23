@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="sbzCrateBase"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_MidCrate"]</xpath>
+		<value>
+			<building>
+				<fixedStorageSettings>
+					<filter>
+						<disallowNotEverStorable>true</disallowNotEverStorable>
+						<categories Inherit="False">
+							<li>Root</li>
+						</categories>
+						<disallowedCategories Inherit="False">
+							<li>Foods</li>
+							<li>FoodMeals</li>
+							<li>Corpses</li>
+							<li>Chunks</li>
+						</disallowedCategories>
+					</filter>
+				</fixedStorageSettings>
+			</building>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>18</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>5000</MaxHitPoints>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/costStuffCount</xpath>
+		<value>
+			<costStuffCount>200</costStuffCount>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/fixedStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Safe"]/building/defaultStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<thingDefs>
+					<li>Silver</li>
+				</thingDefs>
+			</filter>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[@Name="sbzWeaponRackBase"]/costStuffCount</xpath>
+			<value>
+				<costStuffCount>50</costStuffCount>
+			</value>
+		</match>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>15</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="sbz_Drum"]/building/fixedStorageSettings/filter</xpath>
+		<value>
+			<filter>
+				<disallowNotEverStorable>true</disallowNotEverStorable>
+				<categories Inherit="False">
+					<li>ResourcesRaw</li>
+					<li>Foods</li>
+				</categories>
+			</filter>
+		</value>
+	</Operation>
+</Patch>

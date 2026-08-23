@@ -16,7 +16,8 @@
 	<incompatibleWith>
 		<li>ferny.progressionstorage</li>
 	</incompatibleWith>
-	<description>Integrates Path of The Muffalo storage mods into Vanilla progression.</description>
+	<modVersion IgnoreIfNoMatchingField="True">230826</modVersion>
+	<description>Integrates Path of The Muffalo storage mods into Vanilla progression. Version 230826.</description>
 	<loadAfter>
 		<li>Ludeon.Rimworld</li>
 		<li>Ludeon.Rimworld.Royalty</li>
@@ -24,6 +25,7 @@
 		<li>Ludeon.Rimworld.Biotech</li>
 		<li>Ludeon.Rimworld.Anomaly</li>
 		<li>Ludeon.Rimworld.Odyssey</li>
+		<li>brrainz.harmony</li>
 		<li>adaptive.storage.framework</li>
 		<li>adaptive.storage.neolithic</li>
 		<li>phaneron.basic.storage</li>

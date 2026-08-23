@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ASFstorage"]</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs</xpath>
+			<value>
+				<DesignationCategoryDef>
+					<defName>ASFstorage</defName>
+					<label>storage</label>
+					<order>503</order>
+					<specialDesignatorClasses>
+						<li>Designator_Cancel</li>
+						<li>Designator_Deconstruct</li>
+					</specialDesignatorClasses>
+				</DesignationCategoryDef>
+			</value>
+		</nomatch>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="ShelfSmall"]</xpath>
+		<value>
+			<designationCategory>ASFstorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Shelf"]</xpath>
+		<value>
+			<designationCategory>ASFstorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[@Name="BookcaseBase"]/designationCategory</xpath>
+		<value>
+			<designationCategory>ASFstorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="Bookcase"]</xpath>
+		<value>
+			<designationCategory>ASFstorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BookcaseSmall"]</xpath>
+		<value>
+			<designationCategory>ASFstorage</designationCategory>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/DesignationCategoryDef[defName="ASFstorage"]/specialDesignatorClasses</xpath>
+		<value>
+			<li>Designator_ZoneAddStockpile_Resources</li>
+			<li>Designator_ZoneAddStockpile_Dumping</li>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/DesignationCategoryDef[defName="ASFstorage"]/order</xpath>
+		<value>
+			<order>597</order>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Shelf_WeaponRack"]/designationCategory</xpath>
+			<value>
+				<designationCategory>ASFstorage</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Recycling Expanded</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VRecyclingE_WasteCrate"]/designationCategory</xpath>
+			<value>
+				<designationCategory>ASFstorage</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Factions Expanded - Medieval 2</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="VFEM2_AilmentsShelf"]</xpath>
+			<value>
+				<designationCategory>ASFstorage</designationCategory>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Spacer Module</li>
+		</mods>
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>Defs/ThingDef[defName="Shelf_RepairRack"]/designationCategory</xpath>
+			<value>
+				<designationCategory>ASFstorage</designationCategory>
+			</value>
+		</match>
+	</Operation>
+</Patch>

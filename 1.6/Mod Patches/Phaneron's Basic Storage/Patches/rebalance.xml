@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageWoodenCrate"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMediumCrate"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageMetalCrate"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStoragePalletSmall"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStoragePalletLarge"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageCask"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageFoodBarrel"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageSack"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageIndustrialContainer"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageCargoContainer"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName="BasicStorageFuelTank"]/building/maxItemsInCell</xpath>
+		<value>
+			<maxItemsInCell>8</maxItemsInCell>
+		</value>
+	</Operation>
+</Patch>

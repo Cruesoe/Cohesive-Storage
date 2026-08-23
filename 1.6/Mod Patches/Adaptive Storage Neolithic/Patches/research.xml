@@ -18,6 +18,24 @@
 			</researchPrerequisites>
 		</value>
 	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[@ParentName="ASNeolithicResearchBase"]</xpath>
+		<attribute>Abstract</attribute>
+		<value>True</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
+		<attribute>Abstract</attribute>
+		<value>True</value>
+	</Operation>
+	<Operation Class="PatchOperationAttributeSet">
+		<success>Always</success>
+		<xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicItemDisplay"]</xpath>
+		<attribute>Abstract</attribute>
+		<value>True</value>
+	</Operation>
 	<Operation Class="PatchOperationRemove">
 		<success>Always</success>
 		<xpath>Defs/ResearchProjectDef[defName="ASNeolithicNeolithicStorage"]</xpath>
