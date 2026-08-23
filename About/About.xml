@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Progression: Storage Lite</name>
-	<author>Kobe Riddle, ferny</author>
-	<packageId>KobeRiddle.ProgressionStorageLite</packageId>
+	<name>Cohesive Storage</name>
+	<author>Kobe Riddle, ferny, Cruesoe</author>
+	<packageId>KobeRiddle.cohesivestorage</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 		<li>1.6</li>

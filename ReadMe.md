@@ -1,4 +1,4 @@
-# Progression Storage lite
+# Cohesive Storage
 
 Integrates storage mods into Vanilla progression.
 
